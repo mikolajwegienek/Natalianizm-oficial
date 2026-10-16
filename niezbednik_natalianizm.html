@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niezbędnik Natalianizmu</title>
+<style>
+:root{--bg:#0c0d2b;--panel:#19172a;--card:#24242b;--text:#f5f5fb;--muted:#a5a6b7;--accent:#f5b82e;--blue:#579cf4;--purple:#555ff0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:32px 18px 24px;text-align:center;background:linear-gradient(140deg,#15183e,#29204a);border-bottom:3px solid var(--accent)}
+header h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.1;margin:0 0 10px}header p{margin:0;color:#d1d2e5}
+nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:12px;background:#10112f;position:sticky;top:0;z-index:2}
+nav a{color:var(--text);text-decoration:none;padding:8px 12px;border-radius:9px;background:#242547}nav a:hover{background:#3a3c71}
+main{max-width:900px;margin:auto;padding:20px 14px 50px}.section{margin:20px 0;padding:22px;background:var(--panel);border:1px solid #34334d;border-radius:16px;box-shadow:0 8px 24px #0002}
+h2{margin:0 0 12px;font-size:1.55rem}h3{margin:0 0 8px}.muted{color:var(--muted)}.pill{display:inline-block;padding:3px 9px;border-radius:7px;background:#34334a;color:#e6e6f1;font-size:.85rem}
+.event{margin-top:18px;background:var(--card);border:1px solid #41414a;border-radius:12px;padding:18px}
+.event-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-weight:700}
+.event h3{font-size:clamp(1.3rem,4vw,1.8rem);margin:12px 0}.event p{color:#c2c2cd;margin:8px 0 16px}
+.server{display:flex;gap:10px;align-items:center;margin:12px 0;color:#eee}.server-icon{width:44px;height:44px;border-radius:9px;background:#6b171c;display:grid;place-items:center;font-size:1.5rem}
+button{border:0;border-radius:9px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer}
+.interest{width:100%;background:#50515c;color:white;margin-top:8px}.interest:hover{background:#656673}.interest.active{background:#245d43}
+ul{padding-left:22px}a{color:var(--blue)}footer{text-align:center;color:var(--muted);padding:20px}
+.small-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.mini{background:#242238;padding:14px;border-radius:10px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🍒 Niezbędnik Natalianizmu</h1>
+  <p>Wszystko, co warto wiedzieć o natalianizmie</p>
+</header>
+<nav>
+  <a href="#o-natalianizmie">O natalianizmie</a>
+  <a href="#aktualnosci">Aktualności</a>
+  <a href="#ogloszenia">Ogłoszenia</a>
+  <a href="#intencje">Intencje</a>
+  <a href="#msza">Msza natalianistyczna</a>
+</nav>
+<main>
+  <section class="section" id="o-natalianizmie">
+    <h2>🍒 Co to jest natalianizm?</h2>
+    <p>Natalianizm to wyjątkowa społeczność, własne tradycje i wspólne wydarzenia. Ten niezbędnik zbiera najważniejsze informacje w jednym miejscu.</p>
+    <div class="small-grid">
+      <div class="mini"><h3>📜 Tradycje</h3><p class="muted">Poznaj zwyczaje i ważne wydarzenia społeczności.</p></div>
+      <div class="mini"><h3>🤝 Społeczność</h3><p class="muted">Bądź na bieżąco z ogłoszeniami i spotkaniami.</p></div>
+    </div>
+  </section>
+  <section class="section" id="aktualnosci">
+    <h2>📰 Aktualności</h2>
+    <p>Witaj w niezbędniku! Sprawdzaj tę stronę, aby nie przegapić nowych wydarzeń i ogłoszeń.</p>
+  </section>
+  <section class="section" id="ogloszenia">
+    <h2>📢 Ogłoszenia natalianizmu</h2>
+    <p>Ważne informacje oraz zaproszenia na wydarzenia społeczności.</p>
+    <div class="event">
+      <span class="pill">OGŁOSZENIE</span>
+      <h3>Dołącz do społeczności</h3>
+      <p>Sprawdź wydarzenia na serwerze Discord i bądź na bieżąco.</p>
+      <a href="https://discord.com/" target="_blank" rel="noopener">Otwórz Discord</a>
+    </div>
+  </section>
+  <section class="section" id="intencje">
+    <h2>🕯️ Intencje</h2>
+    <p>To miejsce na intencje i wiadomości związane ze wspólnotą.</p>
+    <p class="muted">Możesz edytować ten tekst w pliku HTML i wpisać własne informacje.</p>
+  </section>
+  <section class="section" id="msza">
+    <h2>⛪ Najbliższe wydarzenie</h2>
+    <div class="event">
+      <div class="event-top"><span>▣ Dziś o 18:30</span><span class="pill">3 zainteresowanych</span></div>
+      <h3>Msza Natalianistyczna • Zachodzący Bimbał</h3>
+      <p>Nadszedł czas kiedy bimbał Natalii zachodzi pod horyzont 🌄</p>
+      <div class="server">
+        <div class="server-icon">☭</div>
+        <div><strong>☭ PRL 3 ☭</strong><br><span class="muted">🔊 ⛪ | świątynia</span></div>
+      </div>
+      <button class="interest" id="interestButton" type="button">♟ Zainteresowany</button>
+      <p class="muted" id="interestMessage" aria-live="polite">Kliknij przycisk, aby zaznaczyć zainteresowanie na tej stronie.</p>
+    </div>
+  </section>
+</main>
+<footer>🍒 Niezbędnik Natalianizmu</footer>
+<script>
+const button = document.getElementById('interestButton');
+const message = document.getElementById('interestMessage');
+button.addEventListener('click', () => {
+  const active = button.classList.toggle('active');
+  button.textContent = active ? '✓ Zainteresowanie zaznaczone' : '♟ Zainteresowany';
+  message.textContent = active
+    ? 'Zaznaczono zainteresowanie lokalnie w tej stronie. Nie wysyła ono danych na Discorda.'
+    : 'Kliknij przycisk, aby zaznaczyć zainteresowanie na tej stronie.';
+});
+</script>
+</body>
+</html>
